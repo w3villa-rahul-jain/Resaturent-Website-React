@@ -1,0 +1,123 @@
+.navbar{
+  display: flex;
+  justify-content: center;
+  min-height: 20vh;
+  align-items: center;
+  .nav-itemss{
+    padding: 8px 16px;
+    outline: none;
+    background: purple;
+    color: white;
+    border: 1px solid white;
+    &:hover{
+      background: snow;
+      color: purple;
+      border: 1px solid black;
+    }
+  }
+}
+
+
+
+.card-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  .card {
+    background: white;
+    border: 1px solid black;
+    .card-body {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .card-number {
+        height: 25px;
+        width: 100px;
+        background: purple;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-author {
+        color: purple;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .card-title {
+        font-size: 25px;
+        font-weight: 400;
+        border: 1px solid red;
+        width: 100%;
+        padding: 5px 0px;
+        background: purple;
+        color: white;
+        border: none;
+        outline: none;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-description {
+        font-size: 14px;
+        color: gray;
+        height: 60px;
+        overflow: hidden;
+        line-height: 20px;
+      }
+      .read-more {
+        // width: 120px;
+        padding: 8px 16px;
+        background: #0096c7;
+        border: none;
+        outline: none;
+        color: white;
+        border-radius: 40px;
+        font-size: 18px;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+      }
+      .card-image-container {
+        height: 150px;
+        width: 100%;
+        margin: 20px 0px;
+        .card-image {
+          height: 100%;
+          width: 100%;
+        //   object-fit: cover;
+        }
+      }
+      .order-now {
+        width: 100%;
+        padding: 8px 0px;
+        background: purple;
+        font-size: 18px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        border: none;
+        outline: none;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 992px){
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 768px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+}
