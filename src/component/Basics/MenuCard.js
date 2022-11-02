@@ -7,12 +7,13 @@ export default function MenuCard({ menuDataFirst }) {
     <div className="card-container">
 
         {menuDataFirst.map((curElem) => {
+          const {id, name,  ...curEle} = curElem; 
             return(
-        <div className="card" key={curElem.id}>
+        <div className="card" key={id}>
           <div className="card-body">
-            <p className="card-number">{curElem.id}</p>
-            <h3 className="card-author">{curElem.name}</h3>
-            <h4 className="card-title">{curElem.category}</h4>
+            <p className="card-number">{id}</p>
+            <h3 className="card-author">{name}</h3>
+            <h4 className="card-title">{curEle.category}</h4>
             <p className="card-description">
               {curElem.description}
             </p>

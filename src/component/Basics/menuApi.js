@@ -2,7 +2,7 @@ const Menu = [{
     id: 1,
     image: "sjdkds",
     name: "maggi",
-    category: "lunch 1",
+    category: "lunch",
     price: 25,
     description: "For over 100 years MAGGI has been a helper to home cooks around the world. Our products are made to simplify dinner time while still inspiring exploration in the kitchen. MAGGI isn’t a shortcut, it’s a detour to authentic flavors you may not have tried and recipes you thought were too hard to make. So go and try something new or mix up an old favorite and let life be full of flavor."
 },
@@ -18,7 +18,7 @@ const Menu = [{
     id: 3,
     image: "sjdkds",
     name: "maggi 3",
-    category: "lunch 3",
+    category: "lunch",
     price: 25,
     description: "For over 100 years MAGGI has been a helper to home cooks around the world. Our products are made to simplify dinner time while still inspiring exploration in the kitchen. MAGGI isn’t a shortcut, it’s a detour to authentic flavors you may not have tried and recipes you thought were too hard to make. So go and try something new or mix up an old favorite and let life be full of flavor."
 },
